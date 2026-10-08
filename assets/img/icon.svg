@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141a22"/><stop offset="1" stop-color="#07090c"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27e0ff"/><stop offset="0.55" stop-color="#7b61ff"/><stop offset="1" stop-color="#b86bff"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2430"/><stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)"/>
+  <rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="#2a3441" stroke-width="3"/>
+  <!-- vault ring -->
+  <circle cx="256" cy="256" r="164" fill="none" stroke="url(#ring)" stroke-width="18" filter="url(#glow)"/>
+  <g stroke="#27e0ff" stroke-width="8" stroke-linecap="round" opacity="0.55">
+    <line x1="256" y1="70" x2="256" y2="96"/><line x1="256" y1="416" x2="256" y2="442"/>
+    <line x1="70" y1="256" x2="96" y2="256"/><line x1="416" y1="256" x2="442" y2="256"/>
+  </g>
+  <!-- cartridge -->
+  <path d="M186 164h140a14 14 0 0 1 14 14v168l-26 26H186a14 14 0 0 1-14-14V178a14 14 0 0 1 14-14z" fill="url(#face)" stroke="#3a4757" stroke-width="4"/>
+  <rect x="198" y="186" width="116" height="84" rx="10" fill="#0a0e13" stroke="#27e0ff" stroke-opacity="0.35" stroke-width="3"/>
+  <!-- play glyph -->
+  <path d="M242 205l38 23-38 23z" fill="#27e0ff" filter="url(#glow)"/>
+  <g fill="#7b61ff"><rect x="198" y="292" width="10" height="44" rx="3"/><rect x="216" y="292" width="10" height="44" rx="3"/><rect x="234" y="292" width="10" height="44" rx="3"/><rect x="252" y="292" width="10" height="44" rx="3"/></g>
+  <circle cx="300" cy="314" r="11" fill="#f5b94a"/>
+</svg>

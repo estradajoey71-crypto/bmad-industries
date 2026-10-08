@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /account.html
+Disallow: /success.html
+Sitemap: https://estradajoey71-crypto.github.io/bmad-industries/sitemap.xml
