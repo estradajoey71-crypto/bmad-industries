@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Documentation — BMAD Arcade</title><meta name="description" content="BMAD Industries builds BMAD Arcade, an early-access game library and launcher for Linux that finds the games you own and tells you the truth about whether they launched.">
+<title>Install guide and documentation — BMAD Arcade</title><meta name="description" content="How to install BMAD Arcade on Linux (AppImage, tarball or Arch package), activate a licence, update, troubleshoot and uninstall.">
 <link rel="canonical" href="https://estradajoey71-crypto.github.io/bmad-industries/docs.html">
-<meta property="og:title" content="Documentation — BMAD Arcade"><meta property="og:description" content="BMAD Industries builds BMAD Arcade, an early-access game library and launcher for Linux that finds the games you own and tells you the truth about whether they launched."><meta property="og:type" content="website"><meta property="og:site_name" content="BMAD Industries">
+<meta property="og:title" content="Install guide and documentation — BMAD Arcade"><meta property="og:description" content="How to install BMAD Arcade on Linux (AppImage, tarball or Arch package), activate a licence, update, troubleshoot and uninstall."><meta property="og:type" content="website"><meta property="og:site_name" content="BMAD Industries">
 <meta property="og:image" content="https://estradajoey71-crypto.github.io/bmad-industries/assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="BMAD Arcade library screen">
 <meta property="og:url" content="https://estradajoey71-crypto.github.io/bmad-industries/docs.html"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07090c"><link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
@@ -16,14 +16,28 @@
 <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="arcade.html">BMAD Arcade</a><a href="fusion-engine.html">Fusion Engine</a><a href="pricing.html">Pricing</a><a href="docs.html" aria-current="page">Docs</a><a href="support.html">Support</a><a class="btn btn-primary" href="download.html">Download</a></nav>
 <details class="menu"><summary aria-label="Menu">Menu</summary><nav class="menu-list" aria-label="Main (mobile)"><a href="index.html">Home</a><a href="arcade.html">BMAD Arcade</a><a href="fusion-engine.html">Fusion Engine</a><a href="pricing.html">Pricing</a><a href="docs.html" aria-current="page">Docs</a><a href="support.html">Support</a><a href="download.html">Download</a><a href="account.html">Account</a></nav></details>
 </div></header>
-<main id="main"><section class="hero"><div class="wrap prose"><span class="eyebrow">Documentation</span><h1>Getting started</h1>
-<h2>1. Install</h2><p>Download the AppImage, make it executable (<code>chmod +x</code>) and start it. Or use the tarball's <code>./install.sh</code>, or the Arch package.</p>
-<h2>2. First run</h2><p>Arcade detects Steam, Heroic and Lutris and the emulators you installed. Choose folders with your own legally obtained game files for retro consoles, then press Scan.</p>
-<h2>3. Play</h2><p>Open a game and press Play. Arcade starts it through its own launcher and follows it. If it does not start, the game's page says why in <strong>Launch check</strong>.</p>
-<h2>4. Supporter licence</h2><p>After purchase, download your licence from the account page, then in Arcade open <strong>Settings → About &amp; updates → Add licence file</strong>. It is verified on your computer and works offline.</p>
-<h2>5. Updates</h2><p>Arcade checks BMAD's signed release feed and tells you about new versions; it never installs anything by itself.</p>
-<h2>6. Diagnostics</h2><p><strong>Settings → About &amp; updates → Create diagnostics file</strong> makes one readable file without saves, accounts or private titles. Attach it to a support request.</p>
-<h2>Uninstall</h2><p>AppImage: delete the file. Tarball: <code>./uninstall.sh</code> (keeps your library). Arch: <code>sudo pacman -R bmad-arcade-bin</code>.</p></div></section></main>
+<main id="main"><section class="hero"><div class="wrap prose"><span class="eyebrow">Documentation</span><h1>Install guide</h1>
+<h2>System requirements</h2>
+<ul><li>Linux on a 64-bit Intel/AMD PC (x86_64) with a graphical desktop (Wayland or X11).</li>
+<li>A 2022-or-newer distribution (glibc 2.35+): Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch Linux, or similar.</li>
+<li>About 100 MB of disk space. Your games stay where your launchers installed them.</li></ul>
+<h2>1. Download and check the file</h2><p>Get a file from the <a href="download.html">download page</a>. To confirm it arrived intact, put it next to <code>SHA256SUMS</code> and run <code>sha256sum -c SHA256SUMS --ignore-missing</code>; it should print <code>OK</code>.</p>
+<h2>2. Install — pick one</h2>
+<p><strong>AppImage (any distribution):</strong></p><pre><code>chmod +x BMAD-Arcade-0.3.0-x86_64.AppImage
+./BMAD-Arcade-0.3.0-x86_64.AppImage</code></pre>
+<p>It uses your desktop's own graphics, font and sound libraries, which every desktop already has. If it reports a FUSE error, install <code>libfuse2</code> (Ubuntu 24.04: <code>libfuse2t64</code>) or start it with <code>--appimage-extract-and-run</code>.</p>
+<p><strong>Tarball (installs for your user, keeps the previous version):</strong></p><pre><code>tar -xzf bmad-arcade-0.3.0-linux-x86_64.tar.gz
+cd bmad-arcade-0.3.0-linux-x86_64 &amp;&amp; ./install.sh</code></pre>
+<p>It needs WebKitGTK 4.1, GTK 3, libsoup 3 and SDL2. Ubuntu/Debian: <code>sudo apt install libwebkit2gtk-4.1-0 libgtk-3-0 libsoup-3.0-0 libsdl2-2.0-0</code>. Fedora: <code>sudo dnf install webkit2gtk4.1 gtk3 libsoup3 SDL2</code>. <code>./install.sh --rollback</code> restores the previous version.</p>
+<p><strong>Arch Linux:</strong> <code>sudo pacman -U bmad-arcade-bin-0.3.0-1-x86_64.pkg.tar.zst</code> (pacman installs the dependencies).</p>
+<h2>3. First run</h2><p>Arcade detects Steam, Heroic (Epic, GOG) and Lutris and the emulators you installed. For retro consoles, choose folders that hold your own legally obtained game files and press Scan. Arcade includes no games or ROMs.</p>
+<h2>4. Play</h2><p>Open a game and press Play. Arcade starts it through its own launcher and follows it. If it does not start, the game's page says why under <strong>Launch check</strong>.</p>
+<h2>5. Early Access licence</h2><p>After purchase you receive an email with a sign-in link to your account page, where you download your licence file. In Arcade open <strong>Settings → About &amp; updates → Add licence file</strong>. It is checked on your computer and works offline; it unlocks BMAD Vault and custom backgrounds. Lost it? Sign in on the account page with your purchase email and download it again.</p>
+<h2>6. Updates</h2><p>Arcade checks BMAD's signed release feed and tells you about new versions. Downloads are verified against the signed checksum; nothing installs by itself.</p>
+<h2>7. Diagnostics</h2><p><strong>Settings → About &amp; updates → Create diagnostics file</strong> makes one readable file without saves, accounts or private titles. Attach it when you ask for help.</p>
+<h2>Uninstall</h2><p>AppImage: delete the file. Tarball: <code>./uninstall.sh</code> (keeps your library). Arch: <code>sudo pacman -R bmad-arcade-bin</code>. Your library and settings live in <code>~/.local/share/bmad-archive</code> and <code>~/.config/bmad-archive</code> if you want to remove them too.</p>
+<h2>Known limitations</h2><ul><li>Linux x86_64 only; no Windows, macOS or ARM builds.</li><li>Games that are online-only or blocked by anti-cheat on Linux may not run; Arcade says so instead of pretending.</li><li>Cross-game Fusions are in development and not included.</li><li>Physical 8BitDo button mapping is not yet verified on hardware; standard gamepads work.</li></ul>
+<h2>What has been tested</h2><p>Every release file is installed on clean systems before publishing: the tarball on Ubuntu 22.04 and Fedora 41, the AppImage on Debian 12 and Fedora 41, the Arch package on Arch Linux (checked from the command line: the app starts, runs in the free tier, activates a licence and removes it again). Day-to-day use, including real game launches, is tested on an Arch Linux desktop.</p></div></section></main>
 <footer class="site-footer"><div class="wrap">
 <div><a class="brand" href="index.html"><img src="assets/img/icon.svg" alt="" width="26" height="26">BMAD INDUSTRIES</a>
 <p class="legal-line">Third-party games, stores and trademarks belong to their respective owners. BMAD Arcade does not include or redistribute games, ROMs or game files.</p></div>
