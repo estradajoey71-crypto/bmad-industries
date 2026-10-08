@@ -6,7 +6,8 @@ on:
   schedule:
     - cron: "7,37 * * * *"
   workflow_dispatch: {}
-permissions: {}
+permissions:
+  contents: read
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -16,6 +17,7 @@ jobs:
         env:
           STORE_URL: ${{ vars.STORE_URL }}
           DOCS_URL: ${{ vars.DOCS_URL }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           fail=0
           check() {  # url [expected text]
@@ -25,9 +27,22 @@ jobs:
           check https://estradajoey71-crypto.github.io/bmad-industries/ "BMAD Arcade"
           feed=https://estradajoey71-crypto.github.io/bmad-industries/releases/latest.json
           check "$feed" '"version"'
-          for url in $(python3 -c "import json,sys; print(' '.join(a['url'] for a in json.load(open('/tmp/body'))['release']['assets']))"); do
-            code=$(curl -sIL -o /dev/null -w '%{http_code}' --max-time 25 "$url"); [ "$code" = 200 ] && echo "ok   $url" || { echo "FAIL $url → HTTP $code"; fail=1; }
-          done
+          # Release files are checked through the API (name, size, upload state), never downloaded, so the
+          # monitor does not inflate GitHub's download counts.
+          cp /tmp/body /tmp/feed.json
+          curl -s --max-time 25 -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/${{ github.repository }}/releases" > /tmp/releases.json
+          python3 - <<'PY' || fail=1
+          import json, sys
+          feed = json.load(open("/tmp/feed.json"))["release"]
+          rel = next((r for r in json.load(open("/tmp/releases.json")) if r["tag_name"] == feed["version"]), None)
+          bad = 0
+          for a in feed["assets"]:
+              got = next((x for x in (rel or {}).get("assets", []) if x["name"] == a["name"]), None)
+              ok = got is not None and got["state"] == "uploaded" and got["size"] == a["size"]
+              print(("ok   " if ok else "FAIL ") + a["name"] + ("" if ok else " (missing or wrong size on the release)"))
+              bad |= not ok
+          sys.exit(1 if bad else 0)
+          PY
           if [ -n "$STORE_URL" ]; then check "$STORE_URL/api/health" '"ok":true'; else echo "skip store (STORE_URL not set: backend not deployed yet)"; fi
           if [ -n "$DOCS_URL" ]; then check "$DOCS_URL/healthz" '"ok": true'; else echo "skip docs (DOCS_URL not set)"; fi
           exit $fail
