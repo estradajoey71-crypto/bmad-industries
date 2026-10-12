@@ -1,13 +1,16 @@
-# BMAD Arcade 0.3.2 — Early Access (2026-10-11)
+# BMAD Arcade 0.3.3 — Early Access (2026-10-12)
 
 BMAD Arcade is an early-access game library and launcher for Linux: the games you already own, in one place, launched through their own launchers, with a clear answer when something does not start.
 
+## Changes in 0.3.3
+- The AppImage no longer carries the TIFF image loader and the GPL-licensed JBIG library it needed. BMAD Arcade never loads TIFF images, so nothing changes for you.
+- Notices for every library the AppImage bundles (package, version, licence and where to get the source) are published with the release.
+- The End User Licence Agreement in the packages is version 0.3: it describes the Early Access features and no longer mentions Fusions, which are not part of this edition.
+
 ## Changes in 0.3.2
-- Global search no longer offers the Pokémon and Mario franchise archives. They are not part of this edition, and 0.3.1 could still open them from search results. The catalogs are now left out of the program entirely.
-- Command-line paths for experimental Fusions, Mod Lab and external engines refuse to run in this edition, as the app's own screens already did.
-- Arcade Mode no longer asks for the archives in the background.
-- Game Boy and Game Boy Color games can now be played with a standalone mGBA install. Before, only RetroArch cores were offered for them, so these games showed "Emulator missing" even with mGBA installed.
-- Wording: "1 emulator" instead of "1 emulators"; the diagnostics and Vault descriptions no longer mention features that are not in this edition.
+- Global search no longer offers franchise archives; the catalogs are left out of the program entirely.
+- Command-line paths for experimental Fusions, Mod Lab and external engines refuse to run in this edition.
+- Game Boy and Game Boy Color games can be played with a standalone mGBA install.
 
 ## What you get
 - **Your library, found automatically:** Steam, Epic Games through Heroic, GOG, Lutris and programs you add; DLC listed under its game; artwork from your launchers' own caches and the stores' public image servers.
@@ -32,7 +35,7 @@ Cross-game Fusions and Mod Lab are in development and are **not distributed**: t
 - Linux x86_64 only.
 
 ## Install
-- **AppImage:** `chmod +x BMAD-Arcade-0.3.2-x86_64.AppImage` and run it (glibc 2.35+: Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch).
+- **AppImage:** `chmod +x BMAD-Arcade-0.3.3-x86_64.AppImage` and run it (glibc 2.35+: Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch).
 - **Tarball:** extract, `./install.sh` (keeps the previous version; `--rollback`), `./uninstall.sh` keeps your library.
-- **Arch Linux:** `sudo pacman -U bmad-arcade-bin-0.3.2-1-x86_64.pkg.tar.zst`.
+- **Arch Linux:** `sudo pacman -U bmad-arcade-bin-0.3.3-1-x86_64.pkg.tar.zst`.
 The tarball and Arch package use the system's WebKitGTK 4.1, GTK 3 and SDL2. Verify downloads with `sha256sum -c SHA256SUMS`.

@@ -22,7 +22,7 @@
 <h2>The app</h2>
 <ul>
 <li>BMAD Arcade <strong>sends no telemetry or usage data</strong>. It has no BMAD account.</li>
-<li>It reads your installed launchers' records (Steam, Heroic, Lutris, Prism Launcher) and your chosen library folders <strong>on your computer</strong> to show and launch your games. That information is not uploaded anywhere.</li>
+<li>It reads your installed launchers' records (Steam, Heroic, Lutris, GOG offline installers) and the library folders you choose <strong>on your computer</strong> to show and launch your games. That information is not uploaded anywhere.</li>
 <li>It contacts the internet only for these purposes, and never sends your library, files or identity:</li>
 <li><strong>Online indicator:</strong> while Arcade is open it checks once a minute whether a network is reachable by opening a connection to a public DNS service (1.1.1.1 or 8.8.8.8) without sending data.</li>
 <li><strong>Artwork</strong> for games in your library (Steam's and Epic's image servers, the libretro thumbnail service, Homebrew Hub).</li>
@@ -36,19 +36,21 @@
 <ul>
 <li>No analytics or advertising scripts, no tracking cookies and no fingerprinting.</li>
 <li>The site is hosted on GitHub Pages and the downloads on GitHub Releases. GitHub may keep standard server logs (IP address, time, file) for security and operations under its own privacy statement.</li>
-<li>When BMAD's store server is running the site, it counts page views and campaign links (<code>utm_source</code>, <code>utm_campaign</code>) as anonymous daily totals. It stores no IP addresses and sets no cookies for this.</li>
-<li>If you sign in to your account, a sign-in cookie keeps you signed in. It is used only for that.</li>
+<li>If you arrive through one of BMAD's own campaign links (<code>utm_source</code>, <code>utm_campaign</code>), the site keeps that label in your browser tab (session storage) until you close it. It is sent to Stripe only if you buy, so BMAD can tell which posts lead to purchases. There are no accounts or sign-in cookies.</li>
 </ul>
 <h2>Purchases</h2>
 <ul>
-<li>Payments are processed by <strong>Stripe</strong> on its own payment page, under its own privacy policy. BMAD receives your email address, the product, the amount, the order and licence identifiers and dates — never your card details. A campaign label (for example <code>reddit</code>) is passed along when you arrived from one of BMAD's own links, so BMAD can tell which posts lead to purchases.</li>
-<li>Your licence email is sent from BMAD's email account through its mail provider, which handles the message under its own privacy policy. Stripe also emails you its receipt.</li>
-<li>Order records are kept on BMAD's own computer (not in a third-party database), for as long as needed for your licence, refunds and tax and accounting obligations.</li>
+<li>Payments are processed by <strong>Stripe</strong> on its own payment page, under its own privacy policy. BMAD receives your email address, the product, the amount, Stripe's processing fee, the order and licence identifiers, dates and the campaign label if any — never your card details.</li>
+<li>Your licence email is sent from BMAD's Gmail account through <strong>Google</strong>, which handles the message under its own privacy policy; replies and support emails are kept in that mailbox. Stripe also emails you its receipt.</li>
+<li>Order records (email address, order, licence identifier, amounts and dates) are kept in a database on BMAD's own computer, not in a third-party database, for as long as needed for your licence, refunds and tax and accounting obligations.</li>
+<li>BMAD does not sell or rent personal information and does not use it for advertising.</li>
 </ul>
 <h2>Your choices</h2>
 <ul>
 <li>You can delete the app's data at any time (uninstall with <code>--purge</code>, or remove its folders).</li>
-<li>To see, correct or delete data BMAD holds about a purchase, contact support privately (not on public issue trackers); legally required accounting records may have to be kept.</li>
+<li>To see, correct or delete data BMAD holds about a purchase, write to the support address on the Support page (not on public issue trackers); legally required accounting records may have to be kept.</li>
+<li>BMAD Arcade and this site are not directed at children under 13.</li>
+<li><strong>Changes:</strong> when this policy changes, the effective date above changes; significant changes are also noted on this page. Because the site has no tracking, it does not respond differently to &quot;Do Not Track&quot; signals.</li>
 </ul></div></section></main>
 <footer class="site-footer"><div class="wrap">
 <div><a class="brand" href="../index.html"><img src="../assets/img/icon.svg" alt="" width="26" height="26">BMAD INDUSTRIES</a>
