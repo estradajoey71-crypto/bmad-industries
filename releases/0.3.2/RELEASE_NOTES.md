@@ -1,10 +1,13 @@
-# BMAD Arcade 0.3.1 — Early Access (2026-10-08)
+# BMAD Arcade 0.3.2 — Early Access (2026-10-11)
 
 BMAD Arcade is an early-access game library and launcher for Linux: the games you already own, in one place, launched through their own launchers, with a clear answer when something does not start.
 
-## Changes in 0.3.1
-- Settings → About & updates now describes what the Early Access licence adds (BMAD Vault and custom backgrounds) and offers "Get Early Access"; 0.3.0 wrongly mentioned Premium, Fusions and Mod Lab, which are not part of this edition.
-- The Vault page says before you type a passcode when a Vault needs the Early Access licence.
+## Changes in 0.3.2
+- Global search no longer offers the Pokémon and Mario franchise archives. They are not part of this edition, and 0.3.1 could still open them from search results. The catalogs are now left out of the program entirely.
+- Command-line paths for experimental Fusions, Mod Lab and external engines refuse to run in this edition, as the app's own screens already did.
+- Arcade Mode no longer asks for the archives in the background.
+- Game Boy and Game Boy Color games can now be played with a standalone mGBA install. Before, only RetroArch cores were offered for them, so these games showed "Emulator missing" even with mGBA installed.
+- Wording: "1 emulator" instead of "1 emulators"; the diagnostics and Vault descriptions no longer mention features that are not in this edition.
 
 ## What you get
 - **Your library, found automatically:** Steam, Epic Games through Heroic, GOG, Lutris and programs you add; DLC listed under its game; artwork from your launchers' own caches and the stores' public image servers.
@@ -15,7 +18,7 @@ BMAD Arcade is an early-access game library and launcher for Linux: the games yo
 - **Signed update notifications** and a **diagnostics file** you create and choose to share. No telemetry.
 
 ## Early Access supporter licence (optional, one-time)
-Unlocks BMAD Vault (an encrypted private section) and custom backgrounds, plus every Early Access build and priority support. Everything above stays free.
+Unlocks BMAD Vault (a passcode-locked private section whose entries, such as titles, paths and artwork, are stored encrypted; the game and media files themselves are not encrypted or moved) and custom backgrounds. The licence keeps working on every Early Access build, and support messages from buyers are answered first. Everything above stays free.
 
 ## Verified on the reference machine (Arch Linux, Hyprland, RTX 5060)
 Real launches through Arcade's own pipeline: Bitburner, Hacknet (Steam, native); Over The Top: WWI, Raft, Bodycam, Hogwarts Legacy (Steam, Proton); Civilization VI, Grand Theft Auto V, ARK (Epic through Heroic); RetroArch (Game Boy, Game Boy Color, GBA, NES, PC Engine, PlayStation cores), melonDS, PPSSPP. Honestly reported instead of "started": Battlefield V (stops at the EA app sign-in; EA anti-cheat blocks Linux), New World (closes right after opening), The Elder Scrolls Online (starter crashes under Proton).
@@ -29,7 +32,7 @@ Cross-game Fusions and Mod Lab are in development and are **not distributed**: t
 - Linux x86_64 only.
 
 ## Install
-- **AppImage:** `chmod +x BMAD-Arcade-0.3.1-x86_64.AppImage` and run it (glibc 2.35+: Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch).
+- **AppImage:** `chmod +x BMAD-Arcade-0.3.2-x86_64.AppImage` and run it (glibc 2.35+: Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch).
 - **Tarball:** extract, `./install.sh` (keeps the previous version; `--rollback`), `./uninstall.sh` keeps your library.
-- **Arch Linux:** `sudo pacman -U bmad-arcade-bin-0.3.1-1-x86_64.pkg.tar.zst`.
+- **Arch Linux:** `sudo pacman -U bmad-arcade-bin-0.3.2-1-x86_64.pkg.tar.zst`.
 The tarball and Arch package use the system's WebKitGTK 4.1, GTK 3 and SDL2. Verify downloads with `sha256sum -c SHA256SUMS`.

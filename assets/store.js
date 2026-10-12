@@ -1,7 +1,13 @@
-// BMAD Industries storefront client. Talks to the store server on the same origin. On static
-// hosting (no server) every action says plainly that it is not open yet; nothing is faked.
-const api = async (path, opts) => {
-  const r = await fetch(path, { headers: { "Content-Type": "application/json" }, credentials: "same-origin", ...opts });
+// BMAD Industries storefront client. On the store server it talks to its own origin. On the static copy
+// (GitHub Pages) it reads the store's public status, and the Buy form posts to the store, which redirects to
+// Stripe Checkout. Without a reachable store every action says plainly that it is not open yet; nothing is faked.
+const STORE = (document.querySelector('meta[name="bmad-store"]')?.content || "").replace(/\/$/, "");
+const REMOTE = !!STORE && new URL(STORE).origin !== location.origin;
+const BASE = REMOTE ? STORE : "";
+const api = async (path, opts = {}) => {
+  // Cross-origin calls stay "simple" requests (no JSON content type, no cookies) so no preflight is needed.
+  const headers = opts.body ? { "Content-Type": REMOTE ? "text/plain" : "application/json" } : {};
+  const r = await fetch(BASE + path, { headers, credentials: REMOTE ? "omit" : "same-origin", ...opts });
   const body = await r.json().catch(() => ({}));
   if (!r.ok) throw Object.assign(new Error(body.error || `HTTP ${r.status}`), { status: r.status });
   return body;
@@ -14,28 +20,48 @@ async function storeStatus() {
 }
 
 async function pricing() {
-  const buttons = document.querySelectorAll("[data-buy]");
-  if (!buttons.length) return;
+  const forms = document.querySelectorAll("form[data-buy]");
+  if (!forms.length) return;
   const status = await storeStatus();
-  for (const b of buttons) {
-    const note = document.querySelector(`[data-buy-note="${b.dataset.buy}"]`);
-    if (!status || !status.checkout_ready) {
-      // The page ships in this state; keep it, and make sure the placeholder link does nothing.
-      b.setAttribute("aria-disabled", "true");
-      b.textContent = "Checkout opens soon";
-      b.addEventListener("click", (e) => e.preventDefault());
+  const params = new URLSearchParams(location.search);
+  for (const f of forms) {
+    const b = f.querySelector("button");
+    const note = document.querySelector(`[data-buy-note="${f.dataset.buy}"]`);
+    // The static copy sells only once the owner opened checkout there (site.json checkout_open + store_url).
+    if (!status || !status.checkout_ready || (REMOTE && f.dataset.open !== "yes")) {
+      b.disabled = true; b.setAttribute("aria-disabled", "true"); b.textContent = "Checkout opens soon";
+      f.addEventListener("submit", (e) => e.preventDefault());
       say(note, status ? "Payments are being set up; no purchase is possible yet." : "Checkout is not open yet. The free download works today.");
       continue;
     }
-    b.textContent = b.dataset.label || "Buy";
-    b.removeAttribute("aria-disabled");
-    say(note, status.mode === "test" ? "TEST MODE: use Stripe test cards; no money is charged." : "");
-    b.addEventListener("click", async (e) => {
-      e.preventDefault();
-      b.setAttribute("aria-disabled", "true"); say(note, "Opening secure checkout…");
-      try { location.href = (await api("/api/checkout", { method: "POST", body: JSON.stringify({ product: b.dataset.buy }) })).url; }
-      catch (err) { b.removeAttribute("aria-disabled"); say(note, `Checkout could not start: ${err.message}`); }
-    });
+    for (const k of ["utm_source", "utm_campaign"]) {
+      const v = params.get(k);
+      if (v && /^[\w.-]{1,60}$/.test(v)) f.insertAdjacentHTML("beforeend", `<input type="hidden" name="${k}" value="${v}">`);
+    }
+    b.disabled = false; b.removeAttribute("aria-disabled"); b.textContent = b.dataset.label || "Buy";
+    say(note, status.mode === "test" ? "TEST MODE: use Stripe test cards; no money is charged." : "Secure checkout by Stripe.");
+    f.addEventListener("submit", () => { b.setAttribute("aria-disabled", "true"); say(note, "Opening secure checkout…"); });
+  }
+}
+
+/** Payment Links (static storefront): after the launch price's last day (US Pacific) a page that was built earlier
+ * switches to the regular price and its link. Campaign labels travel to Stripe as the checkout's client_reference_id. */
+function paymentLinks() {
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Los_Angeles", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  const params = new URLSearchParams(location.search);
+  const label = (v) => (v && /^[\w-]{1,60}$/.test(v) ? v : "");
+  // A campaign link usually lands on another page first; the label is kept for this tab only (never sent anywhere
+  // except to Stripe with a purchase).
+  let ref = [label(params.get("utm_source")), label(params.get("utm_campaign"))].filter(Boolean).join("__");
+  try { if (ref) sessionStorage.setItem("bmad_ref", ref); else ref = sessionStorage.getItem("bmad_ref") || ""; } catch { /* storage blocked */ }
+  for (const a of document.querySelectorAll("a[data-plink]")) {
+    if (a.dataset.until && today > a.dataset.until && a.dataset.regular) {
+      a.href = a.dataset.regular; a.textContent = a.dataset.regularLabel;
+      const price = document.querySelector(`[data-price="${a.dataset.plink}"]`);
+      if (price) { price.textContent = a.dataset.regularLabel.replace(/^Buy /, ""); if (price.nextElementSibling) price.nextElementSibling.textContent = " one-time"; }
+      document.querySelector(`[data-price-note="${a.dataset.plink}"]`)?.remove();
+    }
+    if (ref) { const u = new URL(a.href); u.searchParams.set("client_reference_id", ref.slice(0, 200)); a.href = u.toString(); }
   }
 }
 
@@ -48,7 +74,9 @@ async function success() {
     try {
       const o = await api(`/api/order?session_id=${encodeURIComponent(id)}`);
       if (o.status === "paid") {
-        el.innerHTML = `Payment confirmed — order <b>${o.order}</b>${o.test ? ' <span class="pill-test">TEST ORDER (no money charged)</span>' : ""}. We emailed ${o.email_hint} a link to your licence and downloads.`;
+        el.innerHTML = `Payment confirmed — order <b>${o.order}</b>${o.test ? ' <span class="pill-test">TEST ORDER (no money charged)</span>' : ""}. ` +
+          (o.email_sent ? `We emailed ${o.email_hint} a link to your licence and downloads.`
+            : `Your licence is ready, but the email to ${o.email_hint} has not gone out yet. We will send it; if it has not arrived within a day, contact support with order ${o.order}.`);
         return;
       }
     } catch { break; }
@@ -60,6 +88,11 @@ async function success() {
 async function account() {
   const root = $("#account");
   if (!root) return;
+  if (REMOTE) {  // accounts live on the store server (its own cookies); send the visitor there
+    $("#login").hidden = true;
+    root.innerHTML = `<p><a class="btn btn-primary" href="${STORE}/account.html">Open your account on the BMAD store</a></p><p class="small mute">Sign-in links and downloads are served from ${new URL(STORE).host}.</p>`;
+    return;
+  }
   const token = new URLSearchParams(location.search).get("token");
   if (token) {
     try { await api("/api/account/session", { method: "POST", body: JSON.stringify({ token }) }); history.replaceState(null, "", "account.html"); }
@@ -87,8 +120,8 @@ async function support() {
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
     try { say($("#support-msg"), (await api("/api/support", { method: "POST", body: JSON.stringify({ email: form.email.value, topic: form.topic.value, message: form.message.value }) })).message); form.reset(); }
-    catch (err) { say($("#support-msg"), err.status ? err.message : "This form is not connected on this site yet. Please open an issue on GitHub (link below) — without private details."); }
+    catch (err) { say($("#support-msg"), err.status && ![404, 405].includes(err.status) ? err.message : "This form is not connected on this site yet. Please open an issue on GitHub (link below) — without private details."); }
   });
 }
 
-pricing(); success(); account(); support();
+paymentLinks(); pricing(); success(); account(); support();
