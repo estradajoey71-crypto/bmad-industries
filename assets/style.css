@@ -156,3 +156,11 @@ label { display: block; font-size: 14px; color: var(--dim); margin-top: 10px; }
 .pill-test { color: var(--amber); font: 600 12px var(--mono); }
 .products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 @media (max-width: 980px) { .products { grid-template-columns: 1fr; } }
+
+/* Inline demo loads only after the visitor chooses to play. */
+.demo-video { margin: 0 auto; max-width: 330px; width: 100%; }
+.demo-video video { display: block; width: 100%; height: auto; border-radius: 16px; background: #07090c; }
+.demo-video figcaption { margin-top: 12px; font-size: 14px; color: var(--dim); }
+[id] { scroll-margin-top: 90px; }
+
+.prose { overflow-wrap: anywhere; min-width: 0; }
