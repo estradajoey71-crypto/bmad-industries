@@ -1,0 +1,23 @@
+{
+  "name": "Ironbark Home Repair",
+  "url": "https://example.com/ironbark-demo/",
+  "noindex": true,
+  "form_provider": "demo",
+  "theme": {
+    "primary": "#1d4a3c",
+    "accent": "#f2b43c",
+    "ink": "#17201c",
+    "paper": "#faf7f1"
+  },
+  "pages": [
+    ""
+  ],
+  "files": [
+    "404.html",
+    "index.html",
+    "robots.txt",
+    "site.js",
+    "sitemap.xml",
+    "styles.css"
+  ]
+}

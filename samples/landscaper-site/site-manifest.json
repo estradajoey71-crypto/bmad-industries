@@ -1,0 +1,23 @@
+{
+  "name": "Fernwood Landscaping",
+  "url": "https://example.com/fernwood-demo/",
+  "noindex": true,
+  "form_provider": "demo",
+  "theme": {
+    "primary": "#2f5d34",
+    "accent": "#e9c46a",
+    "ink": "#1c241d",
+    "paper": "#f7f5ee"
+  },
+  "pages": [
+    ""
+  ],
+  "files": [
+    "404.html",
+    "index.html",
+    "robots.txt",
+    "site.js",
+    "sitemap.xml",
+    "styles.css"
+  ]
+}

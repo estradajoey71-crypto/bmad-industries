@@ -1,0 +1,26 @@
+{
+  "name": "Gearline Auto Care",
+  "url": "https://example.com/gearline-demo/",
+  "noindex": true,
+  "form_provider": "demo",
+  "theme": {
+    "primary": "#b3261e",
+    "accent": "#ffd166",
+    "ink": "#111418",
+    "paper": "#f6f6f4"
+  },
+  "pages": [
+    "",
+    "services",
+    "service-area",
+    "contact"
+  ],
+  "files": [
+    "404.html",
+    "index.html",
+    "robots.txt",
+    "site.js",
+    "sitemap.xml",
+    "styles.css"
+  ]
+}

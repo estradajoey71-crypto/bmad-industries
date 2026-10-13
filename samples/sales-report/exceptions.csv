@@ -1,0 +1,7 @@
+line,order_id,reason
+42,SO-10301,order_date '2026-02-30' is not a valid date (YYYY-MM-DD)
+43,SO-10302,quantity must be at least 1
+44,SO-10303,product is empty
+122,SO-10168,exact duplicate of line 12
+123,SO-10304,discount $200.00 is larger than the line total $129.00
+124,SO-10305,"status 'shipped?' is not one of cancelled, completed, refunded"

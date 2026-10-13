@@ -1,0 +1,307 @@
+order_id,order_date,customer,region,product,category,quantity,unit_price,discount,status
+SO-10106,2026-01-08,CUST-0002,Online,Camp Lantern,Lighting,1,44.00,5.00,completed
+SO-10153,2026-01-09,CUST-0139,West,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10156,2026-01-14,CUST-0033,South,Headlamp 400,Lighting,2,39.99,0.00,completed
+SO-10166,2026-01-16,CUST-0077,South,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10292,2026-01-16,CUST-0048,North,Headlamp 400,Lighting,3,39.99,0.00,completed
+SO-10086,2026-01-19,CUST-0001,East,Summit Pack 45L,Packs,4,149.00,0.00,completed
+SO-10143,2026-01-21,CUST-0031,West,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10021,2026-01-22,CUST-0031,Online,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10029,2026-01-27,CUST-0007,East,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10177,2026-01-30,CUST-0061,Online,Headlamp 400,Lighting,2,39.99,0.00,cancelled
+SO-10168,2026-02-02,CUST-0059,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10111,2026-02-07,CUST-0023,West,Filter Straw,Hydration,3,24.00,0.00,completed
+SO-10147,2026-02-08,CUST-0104,West,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10194,2026-02-09,CUST-0031,Online,Tarp Kit,Shelter,2,79.00,0.00,completed
+SO-10151,2026-02-10,CUST-0082,North,Trail Daypack 22L,Packs,2,64.00,10.00,completed
+SO-10176,2026-02-10,CUST-0063,Online,Summit Pack 45L,Packs,1,149.00,10.00,completed
+SO-10244,2026-02-11,CUST-0018,North,Tarp Kit,Shelter,3,79.00,0.00,completed
+SO-10024,2026-02-13,CUST-0108,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10104,2026-02-13,CUST-0067,West,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10200,2026-02-13,CUST-0016,North,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10297,2026-02-13,CUST-0003,Online,Filter Straw,Hydration,2,24.00,10.00,completed
+SO-10001,2026-02-14,CUST-0030,South,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10093,2026-02-15,CUST-0100,North,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10165,2026-02-19,CUST-0139,East,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10120,2026-02-21,CUST-0122,North,Summit Pack 45L,Packs,2,149.00,5.00,completed
+SO-10126,2026-02-21,CUST-0023,Online,Insulated Bottle 1L,Hydration,2,32.50,10.00,refunded
+SO-10202,2026-02-21,CUST-0058,East,Rain Shell,Apparel,1,129.00,10.00,completed
+SO-10237,2026-02-21,CUST-0137,West,Camp Lantern,Lighting,1,44.00,5.00,completed
+SO-10238,2026-02-21,CUST-0036,Online,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10096,2026-02-22,CUST-0024,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10080,2026-02-26,CUST-0116,South,Summit Pack 45L,Packs,2,149.00,5.00,cancelled
+SO-10085,2026-02-26,CUST-0079,North,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10004,2026-02-28,CUST-0109,Online,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10255,2026-02-28,CUST-0063,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10225,2026-03-01,CUST-0032,West,Rain Shell,Apparel,3,129.00,0.00,completed
+SO-10141,2026-03-02,CUST-0039,North,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10267,2026-03-02,CUST-0083,South,Trail Daypack 22L,Packs,1,64.00,10.00,completed
+SO-10102,2026-03-03,CUST-0132,Online,Trail Daypack 22L,Packs,2,64.00,5.00,completed
+SO-10221,2026-03-04,CUST-0078,West,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10224,2026-03-06,CUST-0051,South,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10301,2026-02-30,CUST-0007,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10302,2026-03-14,CUST-0019,East,Tarp Kit,Shelter,-2,79.00,0.00,completed
+SO-10303,2026-04-02,CUST-0033,West,,Apparel,1,28.00,0.00,completed
+SO-10300,2026-03-06,CUST-0138,North,Tarp Kit,Shelter,1,79.00,10.00,completed
+SO-10089,2026-03-07,CUST-0056,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10228,2026-03-07,CUST-0091,North,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10075,2026-03-08,CUST-0087,North,Trail Daypack 22L,Packs,2,64.00,0.00,completed
+SO-10154,2026-03-09,CUST-0102,East,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10253,2026-03-09,CUST-0027,North,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10180,2026-03-10,CUST-0016,West,Merino Beanie,Apparel,2,28.00,0.00,refunded
+SO-10070,2026-03-11,CUST-0119,South,Tarp Kit,Shelter,1,79.00,0.00,cancelled
+SO-10235,2026-03-11,CUST-0043,Online,Insulated Bottle 1L,Hydration,2,32.50,0.00,completed
+SO-10037,2026-03-12,CUST-0052,North,Headlamp 400,Lighting,4,39.99,10.00,completed
+SO-10068,2026-03-12,CUST-0061,Online,Rain Shell,Apparel,4,129.00,0.00,completed
+SO-10258,2026-03-13,CUST-0069,East,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10051,2026-03-14,CUST-0003,Online,Trail Daypack 22L,Packs,1,64.00,10.00,completed
+SO-10067,2026-03-14,CUST-0080,North,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10129,2026-03-14,CUST-0039,East,Filter Straw,Hydration,4,24.00,0.00,completed
+SO-10272,2026-03-14,CUST-0044,North,Summit Pack 45L,Packs,3,149.00,0.00,completed
+SO-10171,2026-03-15,CUST-0069,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10117,2026-03-16,CUST-0065,West,Ultralight Tent 2P,Shelter,2,289.00,0.00,completed
+SO-10192,2026-03-16,CUST-0018,West,Merino Beanie,Apparel,1,28.00,0.00,refunded
+SO-10230,2026-03-16,CUST-0121,South,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10290,2026-03-16,CUST-0056,West,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10105,2026-03-17,CUST-0032,West,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10011,2026-03-18,CUST-0036,Online,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10113,2026-03-19,CUST-0128,North,Filter Straw,Hydration,3,24.00,5.00,completed
+SO-10164,2026-03-19,CUST-0093,Online,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10209,2026-03-19,CUST-0016,East,Rain Shell,Apparel,3,129.00,0.00,completed
+SO-10160,2026-03-20,CUST-0078,West,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10294,2026-03-20,CUST-0029,Online,Insulated Bottle 1L,Hydration,3,32.50,0.00,completed
+SO-10108,2026-03-21,CUST-0130,West,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10203,2026-03-22,CUST-0110,West,Camp Lantern,Lighting,1,44.00,5.00,completed
+SO-10239,2026-03-22,CUST-0108,North,Summit Pack 45L,Packs,3,149.00,0.00,refunded
+SO-10091,2026-03-23,CUST-0020,North,Headlamp 400,Lighting,2,39.99,0.00,completed
+SO-10182,2026-03-23,CUST-0065,Online,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10198,2026-03-23,CUST-0008,West,Camp Lantern,Lighting,1,44.00,5.00,completed
+SO-10214,2026-03-24,CUST-0029,Online,Headlamp 400,Lighting,2,39.99,0.00,refunded
+SO-10123,2026-03-26,CUST-0031,East,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10034,2026-03-28,CUST-0132,Online,Summit Pack 45L,Packs,3,149.00,0.00,refunded
+SO-10232,2026-03-28,CUST-0090,Online,Tarp Kit,Shelter,2,79.00,0.00,completed
+SO-10276,2026-03-28,CUST-0123,West,Summit Pack 45L,Packs,1,149.00,5.00,completed
+SO-10018,2026-03-29,CUST-0064,North,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10050,2026-03-30,CUST-0080,Online,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10112,2026-03-30,CUST-0002,North,Tarp Kit,Shelter,2,79.00,10.00,completed
+SO-10169,2026-03-30,CUST-0069,Online,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10184,2026-04-01,CUST-0050,North,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10205,2026-04-01,CUST-0071,South,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10216,2026-04-01,CUST-0101,North,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10014,2026-04-02,CUST-0003,Online,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10013,2026-04-03,CUST-0009,East,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10101,2026-04-03,CUST-0026,South,Rain Shell,Apparel,1,129.00,5.00,completed
+SO-10094,2026-04-05,CUST-0010,West,Ultralight Tent 2P,Shelter,1,289.00,0.00,refunded
+SO-10055,2026-04-06,CUST-0111,East,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10012,2026-04-08,CUST-0097,Online,Headlamp 400,Lighting,2,39.99,5.00,completed
+SO-10020,2026-04-08,CUST-0100,Online,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10234,2026-04-08,CUST-0075,West,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10005,2026-04-09,CUST-0023,North,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10081,2026-04-09,CUST-0046,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10138,2026-04-09,CUST-0056,North,Insulated Bottle 1L,Hydration,3,32.50,0.00,completed
+SO-10008,2026-04-10,CUST-0060,South,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10058,2026-04-10,CUST-0073,North,Trail Daypack 22L,Packs,4,64.00,0.00,completed
+SO-10183,2026-04-10,CUST-0132,East,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10263,2026-04-10,CUST-0092,North,Trail Daypack 22L,Packs,1,64.00,10.00,completed
+SO-10270,2026-04-10,CUST-0009,East,Tarp Kit,Shelter,2,79.00,0.00,completed
+SO-10006,2026-04-12,CUST-0028,West,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10116,2026-04-12,CUST-0056,West,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10044,2026-04-13,CUST-0113,West,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10090,2026-04-13,CUST-0078,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10066,2026-04-14,CUST-0056,West,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10007,2026-04-15,CUST-0049,North,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10088,2026-04-15,CUST-0039,East,Ultralight Tent 2P,Shelter,1,289.00,5.00,completed
+SO-10229,2026-04-15,CUST-0118,West,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10295,2026-04-15,CUST-0084,North,Merino Beanie,Apparel,2,28.00,10.00,refunded
+SO-10109,2026-04-16,CUST-0077,North,Ultralight Tent 2P,Shelter,2,289.00,0.00,completed
+SO-10254,2026-04-16,CUST-0034,East,Trail Daypack 22L,Packs,2,64.00,0.00,completed
+SO-10022,2026-04-17,CUST-0039,East,Merino Beanie,Apparel,2,28.00,10.00,completed
+SO-10077,2026-04-17,CUST-0037,West,Tarp Kit,Shelter,1,79.00,5.00,completed
+SO-10078,2026-04-17,CUST-0062,Online,Headlamp 400,Lighting,3,39.99,0.00,completed
+SO-10110,2026-04-17,CUST-0101,East,Ultralight Tent 2P,Shelter,2,289.00,5.00,completed
+SO-10168,2026-02-02,CUST-0059,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10304,2026-05-09,CUST-0101,Online,Rain Shell,Apparel,1,129.00,200.00,completed
+SO-10305,2026-06-11,CUST-0056,South,Camp Lantern,Lighting,2,44.00,0.00,shipped?
+SO-10288,2026-04-18,CUST-0054,West,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10191,2026-04-20,CUST-0073,East,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10212,2026-04-20,CUST-0091,East,Ultralight Tent 2P,Shelter,2,289.00,0.00,completed
+SO-10127,2026-04-21,CUST-0032,West,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10159,2026-04-21,CUST-0095,West,Filter Straw,Hydration,4,24.00,0.00,completed
+SO-10100,2026-04-22,CUST-0080,Online,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10130,2026-04-22,CUST-0090,Online,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10175,2026-04-22,CUST-0024,West,Camp Lantern,Lighting,1,44.00,10.00,completed
+SO-10115,2026-04-23,CUST-0068,West,Headlamp 400,Lighting,2,39.99,0.00,completed
+SO-10196,2026-04-23,CUST-0041,South,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10268,2026-04-23,CUST-0085,Online,Ultralight Tent 2P,Shelter,3,289.00,0.00,refunded
+SO-10136,2026-04-24,CUST-0068,West,Ultralight Tent 2P,Shelter,1,289.00,0.00,cancelled
+SO-10243,2026-04-24,CUST-0040,Online,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10247,2026-04-24,CUST-0110,East,Tarp Kit,Shelter,3,79.00,10.00,completed
+SO-10282,2026-04-24,CUST-0127,North,Merino Beanie,Apparel,1,28.00,0.00,refunded
+SO-10167,2026-04-25,CUST-0124,South,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10259,2026-04-25,CUST-0073,Online,Filter Straw,Hydration,2,24.00,0.00,completed
+SO-10107,2026-04-26,CUST-0099,Online,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10162,2026-04-26,CUST-0039,North,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10017,2026-04-27,CUST-0027,East,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10045,2026-04-27,CUST-0030,Online,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10099,2026-04-27,CUST-0080,Online,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10122,2026-04-27,CUST-0095,West,Filter Straw,Hydration,2,24.00,0.00,completed
+SO-10135,2026-04-28,CUST-0108,West,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10059,2026-04-29,CUST-0060,Online,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10095,2026-04-30,CUST-0104,South,Trail Daypack 22L,Packs,1,64.00,0.00,cancelled
+SO-10133,2026-04-30,CUST-0052,North,Tarp Kit,Shelter,2,79.00,0.00,completed
+SO-10226,2026-04-30,CUST-0043,East,Merino Beanie,Apparel,4,28.00,0.00,refunded
+SO-10074,2026-05-01,CUST-0119,Online,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10152,2026-05-01,CUST-0042,Online,Ultralight Tent 2P,Shelter,4,289.00,0.00,completed
+SO-10178,2026-05-01,CUST-0108,North,Tarp Kit,Shelter,3,79.00,0.00,cancelled
+SO-10188,2026-05-01,CUST-0046,West,Camp Lantern,Lighting,1,44.00,5.00,completed
+SO-10251,2026-05-01,CUST-0068,North,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10052,2026-05-02,CUST-0015,North,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10128,2026-05-02,CUST-0025,South,Merino Beanie,Apparel,1,28.00,0.00,refunded
+SO-10252,2026-05-02,CUST-0116,South,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10023,2026-05-03,CUST-0050,North,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10083,2026-05-03,CUST-0033,North,Merino Beanie,Apparel,2,28.00,0.00,completed
+SO-10118,2026-05-03,CUST-0012,South,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10145,2026-05-03,CUST-0008,North,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10146,2026-05-03,CUST-0016,South,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10213,2026-05-03,CUST-0122,Online,Tarp Kit,Shelter,3,79.00,5.00,completed
+SO-10227,2026-05-04,CUST-0093,North,Tarp Kit,Shelter,3,79.00,0.00,refunded
+SO-10283,2026-05-04,CUST-0121,Online,Trail Daypack 22L,Packs,4,64.00,0.00,completed
+SO-10042,2026-05-05,CUST-0060,North,Insulated Bottle 1L,Hydration,1,32.50,0.00,refunded
+SO-10084,2026-05-05,CUST-0035,North,Rain Shell,Apparel,4,129.00,0.00,completed
+SO-10245,2026-05-05,CUST-0050,East,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10281,2026-05-05,CUST-0073,North,Merino Beanie,Apparel,2,28.00,10.00,completed
+SO-10284,2026-05-05,CUST-0098,North,Trail Daypack 22L,Packs,3,64.00,0.00,completed
+SO-10207,2026-05-06,CUST-0051,South,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10035,2026-05-07,CUST-0016,South,Trail Daypack 22L,Packs,1,64.00,10.00,completed
+SO-10134,2026-05-07,CUST-0127,Online,Summit Pack 45L,Packs,1,149.00,0.00,refunded
+SO-10218,2026-05-07,CUST-0032,South,Insulated Bottle 1L,Hydration,2,32.50,0.00,completed
+SO-10248,2026-05-07,CUST-0045,Online,Rain Shell,Apparel,1,129.00,10.00,completed
+SO-10231,2026-05-08,CUST-0059,North,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10280,2026-05-08,CUST-0075,North,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10299,2026-05-08,CUST-0103,West,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10019,2026-05-09,CUST-0108,South,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10069,2026-05-09,CUST-0010,Online,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10071,2026-05-09,CUST-0073,North,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10144,2026-05-09,CUST-0110,Online,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10047,2026-05-10,CUST-0100,South,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10158,2026-05-10,CUST-0117,Online,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10256,2026-05-10,CUST-0064,Online,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10273,2026-05-10,CUST-0015,South,Insulated Bottle 1L,Hydration,2,32.50,0.00,completed
+SO-10032,2026-05-11,CUST-0045,Online,Filter Straw,Hydration,2,24.00,0.00,completed
+SO-10048,2026-05-11,CUST-0093,Online,Headlamp 400,Lighting,4,39.99,5.00,refunded
+SO-10054,2026-05-11,CUST-0026,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10150,2026-05-11,CUST-0111,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10161,2026-05-11,CUST-0097,North,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10219,2026-05-11,CUST-0034,Online,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10265,2026-05-11,CUST-0081,North,Filter Straw,Hydration,2,24.00,0.00,completed
+SO-10031,2026-05-12,CUST-0014,East,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10060,2026-05-12,CUST-0060,Online,Camp Lantern,Lighting,2,44.00,10.00,completed
+SO-10149,2026-05-12,CUST-0049,South,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10215,2026-05-12,CUST-0128,South,Merino Beanie,Apparel,3,28.00,0.00,completed
+SO-10298,2026-05-12,CUST-0042,South,Filter Straw,Hydration,2,24.00,0.00,completed
+SO-10131,2026-05-13,CUST-0122,West,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10148,2026-05-13,CUST-0055,Online,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10220,2026-05-13,CUST-0030,North,Insulated Bottle 1L,Hydration,2,32.50,0.00,completed
+SO-10222,2026-05-13,CUST-0089,West,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10170,2026-05-14,CUST-0109,South,Rain Shell,Apparel,2,129.00,5.00,completed
+SO-10186,2026-05-14,CUST-0130,Online,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10043,2026-05-15,CUST-0006,Online,Summit Pack 45L,Packs,2,149.00,5.00,completed
+SO-10098,2026-05-15,CUST-0020,East,Merino Beanie,Apparel,2,28.00,0.00,completed
+SO-10173,2026-05-15,CUST-0029,West,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10266,2026-05-15,CUST-0137,North,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10275,2026-05-15,CUST-0052,North,Insulated Bottle 1L,Hydration,2,32.50,10.00,completed
+SO-10286,2026-05-15,CUST-0006,North,Insulated Bottle 1L,Hydration,2,32.50,0.00,completed
+SO-10293,2026-05-15,CUST-0072,North,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10053,2026-05-16,CUST-0125,South,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10119,2026-05-16,CUST-0084,East,Merino Beanie,Apparel,2,28.00,0.00,completed
+SO-10124,2026-05-16,CUST-0063,Online,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10250,2026-05-16,CUST-0140,South,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10041,2026-05-17,CUST-0125,Online,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10076,2026-05-17,CUST-0129,Online,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10172,2026-05-18,CUST-0108,West,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10197,2026-05-18,CUST-0057,North,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10262,2026-05-18,CUST-0086,South,Rain Shell,Apparel,1,129.00,5.00,completed
+SO-10061,2026-05-19,CUST-0121,Online,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10063,2026-05-19,CUST-0075,West,Filter Straw,Hydration,1,24.00,0.00,cancelled
+SO-10114,2026-05-19,CUST-0093,West,Merino Beanie,Apparel,4,28.00,0.00,completed
+SO-10199,2026-05-19,CUST-0020,West,Summit Pack 45L,Packs,1,149.00,5.00,completed
+SO-10289,2026-05-19,CUST-0100,East,Ultralight Tent 2P,Shelter,3,289.00,0.00,completed
+SO-10003,2026-05-20,CUST-0050,Online,Rain Shell,Apparel,2,129.00,10.00,completed
+SO-10025,2026-05-20,CUST-0001,Online,Rain Shell,Apparel,1,129.00,0.00,completed
+SO-10038,2026-05-20,CUST-0053,North,Filter Straw,Hydration,4,24.00,0.00,completed
+SO-10240,2026-05-20,CUST-0138,East,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10285,2026-05-20,CUST-0130,West,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10016,2026-05-21,CUST-0078,East,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10026,2026-05-21,CUST-0101,West,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10082,2026-05-21,CUST-0124,Online,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10189,2026-05-22,CUST-0049,Online,Ultralight Tent 2P,Shelter,1,289.00,5.00,completed
+SO-10010,2026-05-23,CUST-0057,Online,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10072,2026-05-23,CUST-0050,East,Summit Pack 45L,Packs,3,149.00,0.00,completed
+SO-10163,2026-05-23,CUST-0086,East,Rain Shell,Apparel,3,129.00,0.00,completed
+SO-10257,2026-05-23,CUST-0040,South,Headlamp 400,Lighting,2,39.99,0.00,cancelled
+SO-10279,2026-05-23,CUST-0030,Online,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10121,2026-05-24,CUST-0118,South,Headlamp 400,Lighting,2,39.99,0.00,completed
+SO-10181,2026-05-24,CUST-0040,West,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10264,2026-05-24,CUST-0128,South,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10002,2026-05-25,CUST-0014,Online,Filter Straw,Hydration,1,24.00,0.00,completed
+SO-10056,2026-05-25,CUST-0134,Online,Tarp Kit,Shelter,1,79.00,5.00,completed
+SO-10073,2026-05-25,CUST-0105,West,Filter Straw,Hydration,2,24.00,5.00,completed
+SO-10137,2026-05-25,CUST-0134,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10140,2026-05-25,CUST-0132,East,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10092,2026-05-27,CUST-0109,East,Camp Lantern,Lighting,3,44.00,0.00,completed
+SO-10155,2026-05-27,CUST-0095,Online,Camp Lantern,Lighting,1,44.00,10.00,completed
+SO-10242,2026-05-27,CUST-0006,East,Rain Shell,Apparel,3,129.00,10.00,completed
+SO-10271,2026-05-27,CUST-0047,South,Merino Beanie,Apparel,4,28.00,10.00,completed
+SO-10030,2026-05-28,CUST-0076,West,Insulated Bottle 1L,Hydration,3,32.50,0.00,completed
+SO-10132,2026-05-28,CUST-0090,East,Merino Beanie,Apparel,3,28.00,5.00,completed
+SO-10249,2026-05-28,CUST-0098,West,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10287,2026-05-28,CUST-0086,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10125,2026-05-29,CUST-0059,Online,Summit Pack 45L,Packs,2,149.00,10.00,completed
+SO-10009,2026-05-31,CUST-0033,Online,Headlamp 400,Lighting,2,39.99,0.00,completed
+SO-10065,2026-05-31,CUST-0098,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10206,2026-05-31,CUST-0065,East,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10195,2026-06-01,CUST-0106,Online,Headlamp 400,Lighting,2,39.99,0.00,completed
+SO-10217,2026-06-01,CUST-0026,North,Filter Straw,Hydration,2,24.00,0.00,completed
+SO-10291,2026-06-01,CUST-0069,North,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10040,2026-06-02,CUST-0050,West,Trail Daypack 22L,Packs,3,64.00,10.00,completed
+SO-10142,2026-06-02,CUST-0092,Online,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10185,2026-06-03,CUST-0066,West,Ultralight Tent 2P,Shelter,1,289.00,5.00,completed
+SO-10057,2026-06-04,CUST-0134,East,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10187,2026-06-06,CUST-0133,Online,Filter Straw,Hydration,1,24.00,0.00,refunded
+SO-10027,2026-06-07,CUST-0133,West,Trail Daypack 22L,Packs,3,64.00,5.00,completed
+SO-10049,2026-06-07,CUST-0067,Online,Insulated Bottle 1L,Hydration,4,32.50,0.00,completed
+SO-10157,2026-06-07,CUST-0045,West,Camp Lantern,Lighting,2,44.00,5.00,completed
+SO-10046,2026-06-08,CUST-0039,Online,Merino Beanie,Apparel,2,28.00,10.00,completed
+SO-10260,2026-06-08,CUST-0083,North,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10269,2026-06-08,CUST-0119,East,Rain Shell,Apparel,1,129.00,10.00,completed
+SO-10278,2026-06-08,CUST-0011,Online,Summit Pack 45L,Packs,1,149.00,10.00,completed
+SO-10033,2026-06-09,CUST-0123,Online,Trail Daypack 22L,Packs,2,64.00,10.00,refunded
+SO-10241,2026-06-10,CUST-0051,Online,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10036,2026-06-11,CUST-0004,Online,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10233,2026-06-11,CUST-0027,North,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10246,2026-06-11,CUST-0007,South,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10261,2026-06-11,CUST-0134,Online,Tarp Kit,Shelter,2,79.00,0.00,completed
+SO-10208,2026-06-12,CUST-0024,West,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10236,2026-06-12,CUST-0107,North,Camp Lantern,Lighting,2,44.00,0.00,completed
+SO-10062,2026-06-13,CUST-0114,Online,Trail Daypack 22L,Packs,4,64.00,0.00,completed
+SO-10079,2026-06-13,CUST-0133,Online,Camp Lantern,Lighting,1,44.00,0.00,completed
+SO-10087,2026-06-13,CUST-0090,Online,Filter Straw,Hydration,3,24.00,10.00,completed
+SO-10139,2026-06-13,CUST-0035,Online,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10190,2026-06-13,CUST-0115,South,Tarp Kit,Shelter,1,79.00,0.00,completed
+SO-10211,2026-06-13,CUST-0058,North,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
+SO-10097,2026-06-14,CUST-0016,East,Headlamp 400,Lighting,2,39.99,10.00,completed
+SO-10201,2026-06-15,CUST-0091,West,Summit Pack 45L,Packs,1,149.00,0.00,completed
+SO-10223,2026-06-16,CUST-0018,West,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10103,2026-06-17,CUST-0060,West,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10204,2026-06-17,CUST-0009,Online,Headlamp 400,Lighting,1,39.99,0.00,completed
+SO-10210,2026-06-17,CUST-0059,North,Ultralight Tent 2P,Shelter,2,289.00,0.00,completed
+SO-10274,2026-06-17,CUST-0088,North,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10193,2026-06-19,CUST-0024,North,Trail Daypack 22L,Packs,1,64.00,0.00,completed
+SO-10028,2026-06-20,CUST-0126,West,Summit Pack 45L,Packs,4,149.00,0.00,refunded
+SO-10174,2026-06-20,CUST-0021,South,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10277,2026-06-20,CUST-0118,North,Summit Pack 45L,Packs,1,149.00,10.00,completed
+SO-10039,2026-06-22,CUST-0018,North,Merino Beanie,Apparel,1,28.00,0.00,completed
+SO-10064,2026-06-23,CUST-0044,Online,Insulated Bottle 1L,Hydration,1,32.50,0.00,completed
+SO-10179,2026-06-23,CUST-0006,Online,Summit Pack 45L,Packs,2,149.00,0.00,completed
+SO-10296,2026-06-24,CUST-0086,East,Rain Shell,Apparel,2,129.00,0.00,completed
+SO-10015,2026-06-26,CUST-0124,West,Ultralight Tent 2P,Shelter,1,289.00,0.00,completed
