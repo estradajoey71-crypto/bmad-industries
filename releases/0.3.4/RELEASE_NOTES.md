@@ -1,6 +1,10 @@
-# BMAD Arcade 0.3.3 — Early Access (2026-10-12)
+# BMAD Arcade 0.3.4 — Early Access (2026-10-12)
 
 BMAD Arcade is an early-access game library and launcher for Linux: the games you already own, in one place, launched through their own launchers, with a clear answer when something does not start.
+
+## Changes in 0.3.4
+- BMAD Vault and custom backgrounds now say up front when they need the optional Early Access licence, with a link to what it adds and a shortcut to adding a licence file, instead of opening a file picker and then refusing the image.
+- The AppImage no longer ships the copyright files of the two libraries 0.3.3 removed.
 
 ## Changes in 0.3.3
 - The AppImage no longer carries the TIFF image loader and the GPL-licensed JBIG library it needed. BMAD Arcade never loads TIFF images, so nothing changes for you.
@@ -35,7 +39,7 @@ Cross-game Fusions and Mod Lab are in development and are **not distributed**: t
 - Linux x86_64 only.
 
 ## Install
-- **AppImage:** `chmod +x BMAD-Arcade-0.3.3-x86_64.AppImage` and run it (glibc 2.35+: Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch).
+- **AppImage:** `chmod +x BMAD-Arcade-0.3.4-x86_64.AppImage` and run it (glibc 2.35+: Ubuntu 22.04+, Debian 12+, Fedora 36+, Arch).
 - **Tarball:** extract, `./install.sh` (keeps the previous version; `--rollback`), `./uninstall.sh` keeps your library.
-- **Arch Linux:** `sudo pacman -U bmad-arcade-bin-0.3.3-1-x86_64.pkg.tar.zst`.
+- **Arch Linux:** `sudo pacman -U bmad-arcade-bin-0.3.4-1-x86_64.pkg.tar.zst`.
 The tarball and Arch package use the system's WebKitGTK 4.1, GTK 3 and SDL2. Verify downloads with `sha256sum -c SHA256SUMS`.

@@ -6,7 +6,7 @@ programs you add. No account, no telemetry.
 
 ![BMAD Arcade's library home](assets/img/home.jpg)
 
-**[Download BMAD Arcade v0.3.3](https://estradajoey71-crypto.github.io/bmad-industries/download.html)** — free · Linux x86_64 · AppImage, tarball or Arch package · [all releases](https://github.com/estradajoey71-crypto/bmad-industries/releases)
+**[Download BMAD Arcade v0.3.4](https://estradajoey71-crypto.github.io/bmad-industries/download.html)** — free · Linux x86_64 · AppImage, tarball or Arch package · [all releases](https://github.com/estradajoey71-crypto/bmad-industries/releases)
 
 ## Free, forever
 - Unified game library (Steam, Heroic/Epic, GOG, Lutris, your own programs)
