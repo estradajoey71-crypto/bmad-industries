@@ -1,30 +1,30 @@
 {
   "release": {
-    "version": "0.3.4",
-    "published": "2026-10-12T18:35:03Z",
+    "version": "0.3.5",
+    "published": "2026-10-13T05:37:38Z",
     "notes": "",
     "download_page": "https://estradajoey71-crypto.github.io/bmad-industries/download.html",
     "min_supported": "0.1.0",
     "assets": [
       {
-        "name": "BMAD-Arcade-0.3.4-x86_64.AppImage",
+        "name": "BMAD-Arcade-0.3.5-x86_64.AppImage",
         "size": 85719544,
-        "sha256": "cbd152bfa3d2696241832a34bae0b6ba6825fc4ab0650b913dc5e727b0fe915b",
-        "url": "https://github.com/estradajoey71-crypto/bmad-industries/releases/download/0.3.4/BMAD-Arcade-0.3.4-x86_64.AppImage"
+        "sha256": "34ea1f74988e94ae1f3ffd138ec5b8def3d1b0252105bf794703023d0543811d",
+        "url": "https://github.com/estradajoey71-crypto/bmad-industries/releases/download/0.3.5/BMAD-Arcade-0.3.5-x86_64.AppImage"
       },
       {
-        "name": "bmad-arcade-0.3.4-linux-x86_64.tar.gz",
-        "size": 5825691,
-        "sha256": "5264402b38f818e1f66637207243a87659c70008af9503c1de55e32a934a955b",
-        "url": "https://github.com/estradajoey71-crypto/bmad-industries/releases/download/0.3.4/bmad-arcade-0.3.4-linux-x86_64.tar.gz"
+        "name": "bmad-arcade-0.3.5-linux-x86_64.tar.gz",
+        "size": 5825629,
+        "sha256": "e397e94be8477380baf18977b987fe269696c3854960402d29c5045f4b8eaaff",
+        "url": "https://github.com/estradajoey71-crypto/bmad-industries/releases/download/0.3.5/bmad-arcade-0.3.5-linux-x86_64.tar.gz"
       },
       {
-        "name": "bmad-arcade-bin-0.3.4-1-x86_64.pkg.tar.zst",
-        "size": 5757506,
-        "sha256": "7dd5a87a1f251705a48cbc58b2c40766b901edd88e5d13a3d67881cd25168528",
-        "url": "https://github.com/estradajoey71-crypto/bmad-industries/releases/download/0.3.4/bmad-arcade-bin-0.3.4-1-x86_64.pkg.tar.zst"
+        "name": "bmad-arcade-bin-0.3.5-1-x86_64.pkg.tar.zst",
+        "size": 5758563,
+        "sha256": "5c47145cb5147f0933ef2750724097f78eee17f57d0b63d3b51ae808d16f6e3f",
+        "url": "https://github.com/estradajoey71-crypto/bmad-industries/releases/download/0.3.5/bmad-arcade-bin-0.3.5-1-x86_64.pkg.tar.zst"
       }
     ]
   },
-  "signature": "+N+T3LW8IDE9PTWXMYVWf1cJuXEv9tG7WHdD2fLoZtAaDs7HgtUn7UF/6HV2MXAUIYggX1N2eiAsC/4GvtdtDQ=="
+  "signature": "tKPjuhhip5mgbxoq2tH5GXqJEWi8Pw7dejsLhe1FRgBqSy90oF6riqgLSVHE+MSlWCpVnYTsAmzl1wAPrJafCw=="
 }
