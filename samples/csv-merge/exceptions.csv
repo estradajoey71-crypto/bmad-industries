@@ -1,0 +1,6 @@
+file,line,order_id,reason
+orders-2026-07.csv,5,,no order id
+orders-2026-08.csv,5,A-1007,unreadable amount: 'twelve dollars'
+orders-2026-09.csv,3,A-1010,unreadable date: '2026-09-31'
+orders-2026-09.csv,5,A-1012,unreadable amount: '$12.345'
+orders-2026-08.csv,,A-1004,duplicate of the row in orders-2026-07.csv; kept the later export

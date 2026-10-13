@@ -1,0 +1,10 @@
+order_id,date,customer,amount,source_file
+A-1001,2026-07-02,Fictional Bakery,120.00,orders-2026-07.csv
+A-1002,2026-07-09,Sample Hardware,1045.50,orders-2026-07.csv
+A-1003,2026-07-15,Example Florist,89.99,orders-2026-07.csv
+A-1004,2026-07-28,Sample Hardware,305.00,orders-2026-08.csv
+A-1005,2026-08-03,Fictional Bakery,64.25,orders-2026-08.csv
+A-1006,2026-08-12,Example Florist,230.00,orders-2026-08.csv
+A-1008,2026-08-31,Demo Cafe,48.10,orders-2026-08.csv
+A-1009,2026-09-04,Example Florist,-25.00,orders-2026-09.csv
+A-1011,2026-09-18,Sample Hardware,1999.99,orders-2026-09.csv
