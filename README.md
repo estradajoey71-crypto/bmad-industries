@@ -34,6 +34,6 @@ Games, GOG, Nintendo, Microsoft, Sony or any game publisher or store it works wi
 files. This repository hosts the BMAD Industries website (https://estradajoey71-crypto.github.io/bmad-industries) and the release downloads.
 
 BMAD Industries also takes small fixed-price client jobs: Python automation for spreadsheets and files, small-business
-websites and fixes, and branded PDF documents. [Services and prices](https://estradajoey71-crypto.github.io/bmad-industries/services.html).
+websites and fixes, branded PDF documents, and AI advertising creative. [Services and prices](https://estradajoey71-crypto.github.io/bmad-industries/services.html).
 
 [Support](https://estradajoey71-crypto.github.io/bmad-industries/support.html) · [Documentation](https://estradajoey71-crypto.github.io/bmad-industries/docs.html) · [Terms](https://estradajoey71-crypto.github.io/bmad-industries/legal/terms.html) · [Privacy](https://estradajoey71-crypto.github.io/bmad-industries/legal/privacy.html) · [Open-source notices](https://estradajoey71-crypto.github.io/bmad-industries/legal/notices.html)
