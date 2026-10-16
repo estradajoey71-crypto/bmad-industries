@@ -154,8 +154,8 @@ input[type=email], input[type=text], textarea, select { background: var(--panel)
 textarea { min-height: 120px; width: 100%; }
 label { display: block; font-size: 14px; color: var(--dim); margin-top: 10px; }
 .pill-test { color: var(--amber); font: 600 12px var(--mono); }
-.products { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-@media (max-width: 980px) { .products { grid-template-columns: 1fr; } }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+@media (max-width: 640px) { .products { grid-template-columns: 1fr; } }
 
 /* Inline demo loads only after the visitor chooses to play. */
 .demo-video { margin: 0 auto; max-width: 330px; width: 100%; }
