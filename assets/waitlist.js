@@ -17,7 +17,7 @@
     const body = { name: field("name").trim(), email: field("email").trim(), consent: true, campaign, os: field("os").trim(), games: field("games").trim(), website: field("website") };
     if (!endpoint) {
       const mail = form.getAttribute("data-mailto") || "";
-      const extra = `\nName: ${body.name}\nOS: ${body.os}\nGames: ${body.games}\nCampaign: ${campaign}\n(consent given on the founders page)`;
+      const extra = `\nName: ${body.name}\nOS: ${body.os}\nGames: ${body.games}\n(consent given on the founders page)`;
       location.href = mail + encodeURIComponent(extra);
       say("Your email app should open with the request filled in; send it and you are on the list.", true);
       return;
