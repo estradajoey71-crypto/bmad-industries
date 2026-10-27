@@ -1,0 +1,13 @@
+{
+  "business": "Readman Industries",
+  "operator": "Jose Estrada",
+  "contact": "estradajoey71@gmail.com",
+  "currency": "usd",
+  "scope": "Custom Python programming for CSV and Excel workflows; newly created project code and its rights transfer to the client.",
+  "packages": [
+    {"id":"quick-fix","name":"Quick Fix","amount":3500,"working_days":3,"revisions":1,"scope":"One task and one agreed input format; Python source, README and sample-based tests."},
+    {"id":"workflow","name":"Workflow","amount":8500,"working_days":5,"revisions":2,"scope":"Up to three connected steps and three input files; Python source, README, exceptions report and automated tests."}
+  ],
+  "payment_rule":"Written scope, tax treatment, delivery date and customer acceptance required before hosted checkout. No recurring charges.",
+  "max_active_projects":2
+}
